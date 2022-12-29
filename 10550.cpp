@@ -9,14 +9,14 @@
 using namespace std;
 int main()
 {
-    int st, a, b, c;
-    while (scanf("%d%d%d%d", &st, &a, &b, &c) && (st || b || a || c))
+    int start, firstNumber, secondNumber, thirdNumber;
+    while (scanf("%d%d%d%d", &start, &firstNumber, &secondNumber, &thirdNumber) && (start || secondNumber || firstNumber || thirdNumber))
     {
         int count = 1080;
         // formula: distance = 1080 + ( (start-first+40) % 40 + (second-first+40)%40 + (second - third+40)%40) * 9 //
-        count += ((st >= a) ? (st - a) : (st + 40 - a)) * 9;
-        count += ((a > b) ? (40 - a + b) : (b - a)) * 9;
-        count += ((b >= c) ? (b - c) : (b + 40 - c)) * 9;
+        count += ((start >= firstNumber) ? (start - firstNumber) : (start + 40 - firstNumber)) * 9;
+        count += ((firstNumber > secondNumber) ? (40 - firstNumber + secondNumber) : (secondNumber - firstNumber)) * 9;
+        count += ((secondNumber >= thirdNumber) ? (secondNumber - thirdNumber) : (secondNumber + 40 - thirdNumber)) * 9;
         printf("%d\n", count);
     }
 
