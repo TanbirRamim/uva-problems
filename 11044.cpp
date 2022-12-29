@@ -4,6 +4,7 @@
 // Institution: SMUCT
 // Batch: 29th
 // ID: 221071034
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
