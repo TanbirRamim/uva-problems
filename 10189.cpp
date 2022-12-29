@@ -33,7 +33,7 @@ int main()
                             field[i + k][j + l]++;
                 }
             }
-            getchar(); // ignore EOL
+            getchar();
         }
         printf("Field #%d:\n", ++field_num);
         for (int i = 1; i <= n; i++)
