@@ -5,8 +5,7 @@
 // Batch: 29th
 // ID: 221071034
 
-#include <iostream>
-#include <cstdio>
+#include <bits/stdc++.h>
 #define MAX_N 100
 #define MAX_M 100
 #define MINE -100
